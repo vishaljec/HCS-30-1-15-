@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="hint_email">Enter Email</string>
+    <string name="hint_pass">Enter Password</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_mobile_number">Enter 10 digit Mobile Number</string>
+    <string name="hint_re_pass">Re enter Password</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_home">Home</string>
+
+    <!-- registration validation error message -->
+    <string name="error_email">Email cannot be blank</string>
+     <string name="error_email_valid">Enter valid email</string>
+    <string name="error_pass">Pasword cannot be blank</string>
+    <string name="error_re_pass">Confirm password does not match</string>
+    <string name="error_full_name">Full name cannot be blank</string>
+        <string name="error_phone_number">Mobile number cannot be blank</string>
+
+    <!-- navigation drawer item labels -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_payment</item>
+        <item>@string/nav_item_rate_card</item>
+        <item>@string/nav_about_us</item>
+        <item>@string/nav_ride_history</item>
+        <item>@string/nav_item_event_booking</item>
+        <item>@string/nav_item_emergency_contact</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_rate_card">Rate Card</string>
+    <string name="nav_item_emergency_contact">Emergency Contact</string>
+    <string name="nav_item_event_booking">Event Booking</string>
+    <string name="nav_item_payment">Payment</string>
+    <string name="nav_ride_history">Ride History</string>
+    <string name="nav_about_us">About Us</string>
+
+</resources>
