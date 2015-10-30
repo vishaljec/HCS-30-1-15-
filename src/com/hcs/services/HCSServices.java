@@ -3,9 +3,10 @@ package com.hcs.services;
 import java.util.HashMap;
 
 import org.apache.log4j.Logger;
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.hcs.activities.Registration;
 import com.hcs.beans.Registerbean;
 import com.hcs.constants.ApplicationConstants;
 import com.hcs.http.HttpConnectionManager;
@@ -32,14 +33,26 @@ public class HCSServices implements ApplicationConstants {
 		String responseObject = null;
 		try {
 			HashMap<String, String> postDataParams  = new HashMap<String, String>();
-			postDataParams.put(PHONE_NUMBER, loginRequestBean.getMobileNumber());
+		/*	postDataParams.put(PHONE_NUMBER, loginRequestBean.getMobileNumber());
 			postDataParams.put(EMAIL, loginRequestBean.getEmail());
 			postDataParams.put(FULL_NAME,loginRequestBean.getFullName());
-			postDataParams.put(PASSWORD,loginRequestBean.getPassword());
+			postDataParams.put(PASSWORD,loginRequestBean.getPassword());*/
 			
+			JSONObject Detail = new JSONObject();
+			try {
+				Detail.put(FULL_NAME, loginRequestBean.getFullName());
+				Detail.put(EMAIL,loginRequestBean.getEmail());
+				Detail.put(PHONE_NUMBER, loginRequestBean.getMobileNumber());
+				Detail.put(PASSWORD, loginRequestBean.getPassword());
+			   
+
+			} catch (JSONException e) {
+			    // TODO Auto-generated catch block
+			    e.printStackTrace();
+			}
 			
 			HttpConnectionManager httpConnManager = new HttpConnectionManager();
-			responseObject = httpConnManager.performPostCall(BASE_URL + REGISTER, postDataParams);
+			responseObject = httpConnManager.performPostCall(BASE_URL + REGISTER+ (new JSONArray().put(Detail)).toString(), postDataParams);
 		} catch (Exception e) {
 			LOGGER.error( "Error occurred in agent authentication service " +
 			e.getMessage(), e);

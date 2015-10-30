@@ -1,13 +1,17 @@
 package com.hcs.activities;
 
 import org.apache.log4j.Logger;
+
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.hcs.uimanager.Screen;
 
 /**
@@ -199,5 +203,11 @@ public abstract class ParentScreen extends AppCompatActivity implements Screen {
 		}
 		LOGGER.info(className + "=>" + "----onDestroy method end-----");
 	}
+	
+	public void showToast(Context context,int message)
+	{
+		Toast.makeText(context, getResources().getString(message), Toast.LENGTH_SHORT).show();
+	}
+	
 
 }

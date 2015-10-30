@@ -179,5 +179,6 @@ public class FragmentDrawer extends Fragment {
  
     public interface FragmentDrawerListener {
         public void onDrawerItemSelected(View view, int position);
+     
     }
 }

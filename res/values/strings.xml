@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Demo</string>
+    <string name="search_hint">Search location</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_login">Login</string>
     <string name="hint_email">Enter Email</string>
@@ -11,15 +12,19 @@
     <string name="hint_re_pass">Re enter Password</string>
     <string name="title_activity_registration">Registration</string>
     <string name="title_activity_home">Home</string>
-
+    <string name="hint_city">Enter a city</string>
+    <string name="hint_departure_date">Enter Departure Date</string>
+    <string name="hint_return_date">Enter Return Date</string>
+    <string name="hint_cab_type">Select cab type</string>
     <!-- registration validation error message -->
     <string name="error_email">Email cannot be blank</string>
-     <string name="error_email_valid">Enter valid email</string>
+    <string name="error_email_valid">Enter valid email</string>
     <string name="error_pass">Pasword cannot be blank</string>
     <string name="error_re_pass">Confirm password does not match</string>
+    <string name="error_confirm_password">Confirm password cannot be blank</string>
     <string name="error_full_name">Full name cannot be blank</string>
-        <string name="error_phone_number">Mobile number cannot be blank</string>
-
+    <string name="error_phone_number">Mobile number cannot be blank</string>
+ <string name="str_atv_places">Enter Place Here</string>
     <!-- navigation drawer item labels -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
@@ -45,5 +50,11 @@
     <string name="nav_item_payment">Payment</string>
     <string name="nav_ride_history">Ride History</string>
     <string name="nav_about_us">About Us</string>
+    <string name="title_messages_rate_card">Rate Card</string>
+    <string name="title_messages_payment">Payment</string>
+    <string name="title_messages_about_us">About Us</string>
+    <string name="title_messages_ride_histoy">Ride History</string>
+    <string name="title_messages_Event_Booking">Event Booking</string>
+    <string name="title_activity_search">SearchActivity</string>
 
 </resources>

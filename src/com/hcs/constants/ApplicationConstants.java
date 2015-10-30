@@ -10,8 +10,8 @@ public interface ApplicationConstants {
 	/**
 	 * Web Service sub URLs
 	 */
-	public static final String BASE_URL = "http://172.16.6.111:4040";
-	public static final String REGISTER = "Register";
+	public static final String BASE_URL = "http://services.thetraveloholic.com/";
+	public static final String REGISTER = "Register?reg=";
 
 
 	public static final int CONNECTION_TIME_OUT = 30 * 1000;
@@ -24,7 +24,7 @@ public interface ApplicationConstants {
 	 */
 	public static final String PHONE_NUMBER = "Mobile";
 	public static final String EMAIL = "Email";
-	public static final String FULL_NAME = " Name";
+	public static final String FULL_NAME = "Name";
 	public static final String PASSWORD = "Password";
 	public static final String SUCCESS = "success";
 	public static final String MSG = "message";

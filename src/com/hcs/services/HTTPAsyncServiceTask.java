@@ -5,6 +5,7 @@ import android.content.DialogInterface.OnCancelListener;
 import android.os.AsyncTask;
 
 import com.hcs.activities.ParentScreen;
+import com.hcs.beans.LoginBean;
 import com.hcs.beans.Registerbean;
 import com.hcs.progressbar.ProgressHUD;
 
@@ -42,7 +43,10 @@ public class HTTPAsyncServiceTask extends AsyncTask<Object, Void, Object> implem
 			Object object = params[0];
 			if (object instanceof Registerbean) {
 				responseObject = hcsServices.agentRegistrationService((Registerbean) object);
- 			} 
+ 			} else if(object instanceof LoginBean)
+ 			{
+ 				
+ 			}
 		} catch (Exception e) {
 			// LOGGER.error("Error occured inside doInBackground ", e);
 		} finally {

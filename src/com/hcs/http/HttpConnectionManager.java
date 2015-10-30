@@ -42,6 +42,7 @@ public class HttpConnectionManager {
 			conn.setReadTimeout(15000);
 			conn.setConnectTimeout(15000);
 			conn.setRequestMethod("POST");
+			conn.setInstanceFollowRedirects(false);
 			conn.setDoInput(true);
 			conn.setDoOutput(true);
 

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout android:layout_width="match_parent"
+            android:background="@drawable/layout_bg"
+        android:layout_height="45dp"
+             android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+                android:layout_width="wrap_content"
+           android:layout_gravity="center"
+                 android:background="#fff"
+                 android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_search" />
+  <com.hcs.widget.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+   
+        android:padding="5dp"
+         android:background="@null"
+        android:hint="@string/str_atv_places" />
+  </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/google" />
+
+</RelativeLayout>
